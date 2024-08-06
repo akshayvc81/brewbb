@@ -1,0 +1,96 @@
+*{
+    color:  rgb(48, 31, 19);
+    font-family: 'Josefin Sans', sans-serif;
+}
+    main{
+    background-color: rgb(236, 208, 118);
+}
+img{
+border-radius: 25px;
+margin: 20px;
+}
+body{
+    background-color: rgb(236, 208, 118);
+}
+section{
+    background-color: rgb(236, 208, 118);
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    justify-content: space-around;
+    height: 120px;
+    top: 0;
+    background-color: rgb(220, 153, 60);
+}
+.navbar img{
+    width: 90px;
+    
+    
+}
+.navbar p{
+    font-family: 'Black Ops One', cursive;
+    font-size: 80px;
+    color: rgb(48, 31, 19);
+    text-shadow: -5px 5px 5px black;
+
+}
+.caption{
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0px;
+    color: rgb(48, 31, 19);
+    background-color: rgb(220, 153, 60);
+    font-size: 16px;
+    justify-content: center; 
+}
+#sticky {
+    position: fixed;
+    bottom: 2%;
+    margin-left: 90%;
+   
+}
+#sticky img {
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+/*media query for 400width devices*/
+
+@media all and (max-width:400px) {
+
+    .navbar {
+       height: 150px; 
+       align-items: center;
+    }
+    .navbar p{
+        font-size: large;
+        font-weight: bolder;
+    }
+    .caption h4{
+        font-size: small;
+    }
+    
+    div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #sticky{
+        position: fixed;
+        bottom: 2%;
+        margin-left: 75%;
+         
+    }
+
+}
